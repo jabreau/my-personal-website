@@ -7,7 +7,7 @@ body {
     font-weight: bold;
     display: block;
     padding: 10px 10px;
-    overflow: none;
+    overflow: hidden;
 }
 
 .accenttext {
