@@ -5,7 +5,7 @@ body {
 .banner {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-weight: bold;
-    float: left;
+    display: block;
     padding: 10px 10px;
     overflow: none;
 }
@@ -25,6 +25,61 @@ body {
 
 .introduction {
     display: inline-block;
+    float: left;
+    padding: 70px 100px;
+    font-size: 40px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    width: 350px;
+    height: fit-content;
+}
 
+.introtext {
+    color:#2a3439;
+}
 
+.introaccent {
+    color: #7EBAEB;
+}
+
+.introaccent:hover {
+    font-style: italic;
+}
+
+.heroimage {
+    width: 300px;
+    height: 300px;
+    overflow: hidden;
+    display: inline-block;
+    border-radius: 50%;
+    border: 8px solid #7EBAEB;
+    position: relative;
+    margin-top: 50px;
+}
+
+.heroimage:hover {
+    box-shadow: 0 0 0 0 rgba(0, 0, 0, 1);
+	transform: scale(1);
+	animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+	0% {
+		transform: scale(0.95);
+		box-shadow: 0 0 0 0 #7EBAEB;
+	}
+
+	70% {
+		transform: scale(1);
+		box-shadow: 0 0 0 10px rgba(0, 0, 0, 0);
+	}
+
+	100% {
+		transform: scale(0.95);
+		box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+	}
+}
+
+.heroimage img {
+    width: auto;
+    height: 100%;
 }
