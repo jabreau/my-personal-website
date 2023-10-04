@@ -1,3 +1,11 @@
-//const h2 = document.createElement("h2");
-//h2.textContent = "This content added by JavaScript";
-//document.querySelector("body").appendChild(h2);
+const currentlyLearning = document.querySelector(".header");
+currentlyLearning.addEventListener("mouseover", addTryingTo);
+currentlyLearning.addEventListener("mouseout", removeTryingTo);
+
+function addTryingTo() {
+    currentlyLearning.textContent = "Ahem... Trying* to Learn:"
+}
+
+function removeTryingTo() {
+    currentlyLearning.textContent = "Currently Learning:"
+}
