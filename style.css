@@ -18,32 +18,45 @@ body {
     color: #2a3439;
 }
 
-.name {
-    text-align: center;
-    font-family: monospace;
+.textcontent {
+    display: inline-block;
+    margin-left: 200px;
+    margin-top: 50px;
+    width: 400px;
 }
 
 .introduction {
-    display: inline-block;
-    float: left;
-    padding: 70px 100px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    width: 350px;
-    height: fit-content;
-}
-
-.introtext {
-    color:#2a3439;
     font-size: 40px;
 }
 
-.introaccent {
+.introductionaccent {
     color: #7EBAEB;
-    font-size: 40px;
 }
 
-.introaccent:hover {
+.introductionaccent:hover {
     font-style: italic;
+}
+
+.typewriter span {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    overflow: hidden;
+    border-right: .15em solid #7EBAEB;
+    white-space: nowrap; 
+    margin: 0 auto; 
+    animation: 
+      typing 3.5s steps(40, end),
+      blink-caret .75s step-end infinite;
+}
+
+@keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+}
+
+@keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: #7EBAEB; }
 }
 
 .heroimage {
