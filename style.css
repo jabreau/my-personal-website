@@ -27,7 +27,6 @@ body {
     display: inline-block;
     float: left;
     padding: 70px 100px;
-    font-size: 40px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     width: 350px;
     height: fit-content;
@@ -35,10 +34,12 @@ body {
 
 .introtext {
     color:#2a3439;
+    font-size: 40px;
 }
 
 .introaccent {
     color: #7EBAEB;
+    font-size: 40px;
 }
 
 .introaccent:hover {
@@ -82,4 +83,101 @@ body {
 .heroimage img {
     width: auto;
     height: 100%;
+}
+
+.header {
+    margin-top: 50px;
+    margin-bottom: 5px;
+    font-style: italic;
+    display: inline-block;
+    color: #2a3439;
+}
+
+.languageportfolio {
+    margin-top: 5px;
+}
+
+.htmlicon {
+    margin-right: 10px;
+    color: #2a3439;
+}
+
+.htmlicon:hover {
+    color: #7EBAEB;
+}
+
+.cssicon {
+    margin-right: 10px;
+    color: #2a3439;
+}
+
+.cssicon:hover {
+    color: #7EBAEB;
+}
+
+.jsicon {
+    margin-right: 10px;
+    color: #2a3439;
+}
+
+.jsicon:hover {
+    color: #7EBAEB;
+}
+
+.giticon {
+    margin-right: 10px;
+    color: #2a3439;
+}
+
+.giticon:hover {
+    color: #7EBAEB;
+}
+
+.contactheader {
+    margin-top: 50px;
+    font-size: 30px;
+}
+
+.contactaccent {
+    color: #7EBAEB;
+}
+
+.contactaccent:hover {
+    font-style: italic;
+}
+
+.contactmethods {
+    margin-top: 10px;
+}
+
+.aticon a {
+    text-decoration: none;
+    color: #2a3439;
+    margin-right: 10px;
+}
+
+.aticon a:hover {
+    color: #7EBAEB;
+    animation: bounce 2.5s infinite;
+}
+
+.githubicon a {
+    text-decoration: none;
+    color: #2a3439;
+    margin-right: 10px;
+}
+
+.githubicon a:hover {
+    color: #7EBAEB;
+    animation: bounce 2.5s infinite;
+}
+
+@keyframes bounce {
+    0%,  
+    100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-5px);
+    }
 }
